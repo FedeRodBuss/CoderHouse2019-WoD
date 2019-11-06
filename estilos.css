@@ -1,0 +1,278 @@
+body{
+	background-color:#dedede;
+	margin:0 auto;
+	width:100%;
+}
+
+p{
+
+}
+
+h1{
+	font-family:'Roboto Slab';
+	font-size:45px;
+	font-weight:bold;
+	text-align:center;
+	margin:0;
+}
+
+h2{
+	
+}
+
+h3{
+	font-family:'Roboto Slab';
+	font-size:24px;
+	font-weight:bold;
+	margin-top:10px;
+}
+
+h4{
+	
+}
+
+header{
+
+}
+
+nav#pages{
+	float:left;
+	text-decoration:none;
+	width:50%;
+	position:fixed;
+	top:20px;
+	left:20px;
+}
+
+nav#pages ul{
+	list-style-type:none;
+  	margin:0;
+  	padding:0;
+  	overflow:hidden;
+}
+
+nav#pages ul li{
+	float:left;
+	font-family:'Roboto Slab';
+	font-size:20px;
+	font-weight:lighter;
+	text-align:center;
+}
+
+nav#pages ul li a{
+	display:block;
+  	color:#ffffff;
+  	text-align: center;
+  	padding:14px 16px;
+  	text-decoration:none;
+  	font-weight:normal;
+}
+
+nav#sociales_media{
+	float:left;
+	text-decoration:none;
+	width:50%;
+	position:fixed;
+	top:20px;
+	right:20px;
+}
+
+nav#sociales_media ul{
+	list-style-type:none;
+  	margin:0;
+  	padding:0;
+  	overflow:hidden;
+}
+
+nav#sociales_media ul li{
+	float:right;
+	font-family:'Roboto Slab';
+	font-size:20px;
+	font-weight:lighter;
+	text-align:center;
+}
+
+nav#sociales_media ul li a{
+	display:block;
+  	color:#ffffff;
+  	text-align: center;
+  	padding:14px 5px;
+  	text-decoration:none;
+  	font-weight:normal;
+}
+
+ion-icon {
+  font-size: 30px;
+}
+
+/*seccion principal*/
+
+main{
+	background:url('img/twod03.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:900px;
+	color:#ffffff;
+}
+
+/*seccion music*/
+
+section#music{
+	background:url('img/twod05.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:800px;
+	color:#ffffff;
+}
+
+article#album{
+	background:;
+	color:;
+}
+
+/*seccion news*/
+
+section#news{
+	background:url('img/twod08.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:800px;
+	color:#ffffff;
+}
+
+article#news_grid{
+	overflow:auto;
+	margin:20px auto;
+	width:60%;
+}
+
+div.note{
+	display:inline;
+	background-color:#ffffff;
+	float:left;
+	width:calc(33.33% - 20px);
+	margin:0 20px 0 0;
+}
+
+div.note2{
+	display:inline;
+	background-color:#ffffff;
+	float:left;
+	width:calc(33.33% - 20px);
+	margin:0;
+}
+
+div.news_button{
+	padding:0 10px 10px 0;
+	color:#ecb800;
+	text-align:right;
+}
+
+div.pic{
+	width:100%;
+}
+
+div.pic img{
+	width:100%;
+}
+
+div.text{
+	padding:0 10px;
+	color:#000000;
+}
+
+div.title{
+	color:#000000;
+	font-size:14px;
+	background-color:#ffffff;
+	padding:0 10px;
+}
+
+/*seccion store*/
+
+section#store{
+	background:url('img/twod07.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:800px;
+	color:#ffffff;
+}
+
+article#product{
+	background:;
+	color:;
+}
+
+div.product_name{
+	background:;
+	color:;
+}
+
+div.product_pic{
+	background:;
+	color:;
+}
+
+div.product_price{
+	background:;
+	color:;
+}
+
+div.store_button{
+	background:;
+	color:;
+}
+
+/*seccion tour*/
+
+section#tour{
+	background:url('img/twod06.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:800px;
+	color:#ffffff;
+}
+
+article#calendar{
+	
+}
+
+div#tour_dates{
+	
+}
+
+div.date_concert{
+	
+}
+
+div.city_concert{
+	
+}
+
+div.venue_concert{
+	
+}
+
+div.ticket_concert{
+	
+}
+/*seccion video*/
+
+section#video{
+	background:url('img/twod04.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:800px;
+	color:#ffffff;
+}
+
+article#video_song{
+	background:;
+	color:;
+}
