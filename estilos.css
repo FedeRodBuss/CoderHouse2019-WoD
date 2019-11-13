@@ -144,24 +144,24 @@ section#news{
 }
 
 article#news_grid{
+	display:flex;
+	flex-wrap:nowrap;
 	overflow:auto;
 	margin:20px auto;
-	width:60%;
+	width:80%;
 }
 
 div.note{
 	display:inline;
 	background-color:#ffffff;
-	float:left;
-	width:calc(33.33% - 20px);
+	flex:0 0 calc(33.33% - 20px);
 	margin:0 20px 0 0;
 }
 
 div.note2{
 	display:inline;
 	background-color:#ffffff;
-	float:left;
-	width:calc(33.33% - 20px);
+	flex:0 0 calc(33.33% - 20px);
 	margin:0;
 }
 
@@ -275,4 +275,25 @@ section#video{
 article#video_song{
 	background:;
 	color:;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 400px) {
+
+	article#news_grid{
+		flex-wrap:wrap;
+	}
+
+	div.note{
+		grid-area:100%;
+		flex:0 0 100%;
+		margin-bottom:20px;
+	}
+
+	div.note2{
+		grid-area:100%;
+		flex:0 0 100%;
+		margin-bottom:20px;
+	}
 }
