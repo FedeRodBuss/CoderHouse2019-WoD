@@ -1,0 +1,19 @@
+.header__navigation {
+background: #008cba;
+padding: 1rem 0;
+margin: 2rem 0;
+text-transform: uppercase;
+}
+
+.header__navigation--secondary {
+@extend .header__navigation;
+background: #dfe0e0;
+}
+
+@mixin botones($bg){
+	border: 1px solid #e0301e;
+	border-radius: 5px;
+	color: #e0301e;
+	height: 35px;
+	width: 90px;
+}

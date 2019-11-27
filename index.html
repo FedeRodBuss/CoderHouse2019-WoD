@@ -2,12 +2,17 @@
 <html>
 <head>
 	<title>The War on Drugs</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet/scss" type="text/css" href="scss/style.scss">
+	<link rel="stylesheet" type="text/css" href="cs/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
+
+
 	<!--video de fondo loopeado con logo de la banda encima-->
 	<main>
 		<header>
@@ -39,46 +44,60 @@
 			</nav>
 		</header>
 	</main>
-	<!--tour--><!--lista de proximos show-->
+
+	<!--tour-->
 	<section id="tour">
 		<h1>tour</h1>
 		<article id="calendar">
-			<div id="tour_dates">
-				<div class="date_concert">
-					<h2>2 OCT</h2>
-				</div>
-				<div class="city_concert">
-					<h2>London, UK</h2>
-				</div>
-				<div class="venue_concert">
-					<h4>Royal Albert Hall</h4>
-				</div>
-				<div class="ticket_concert">
-					Buy tickets
-				</div>
-			</div>
+			<table class="table table-black table-borderless table-striped">
+	  			<thead>
+				    <tr>
+					    <td scope="col">07 JAN</td>
+					    <td scope="col">London, UK</td>
+					    <td scope="col">Royal Albert Hall</td>
+					    <td scope="col">SOLD OUT</td>
+				    </tr>
+				</thead>
+				<tbody>
+				    <tr>
+				    	<td scope="row">09 JAN</td>
+				      	<td>Liverpool, UK</td>
+				      	<td>The Cavern</td>
+				      	<td>Buy ticket</td>
+				    </tr>
+				    <tr>
+				    	<td scope="row">14 JAN</td>
+				      	<td>Barcelona, Spain</td>
+				      	<td>Razzmatazz</td>
+				      	<td>Buy ticket</td>
+				    </tr>
+				 </tbody>
+			</table>
 		</article>
 	</section>
+
+
 	<!--news--><!--grilla de noticias, 3 columnas-->
 	<section id="news">
 		<h1>news</h1>
 		<article id="news_grid">
 
+			<!--uno-->
+			<div class="note">
+				<div class="pic">
+					<img src="img/twod01.jpg">
+				</div>
+				<div class="title">
+					<h3>Noticia</h3>
+				</div>
+				<div class="text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida tincidunt felis. Sed gravida nulla ac diam tempor, non consequat neque tincidunt. Nunc nibh sapien, lacinia nec dolor quis, aliquet commodo ligula. </p>
+				</div>
+				<div class="news_button">
+					read more
+				</div>
+			</div>
 
-			<div class="note">
-				<div class="pic">
-					<img src="img/twod01.jpg">
-				</div>
-				<div class="title">
-					<h3>Noticia</h3>
-				</div>
-				<div class="text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida tincidunt felis. Sed gravida nulla ac diam tempor, non consequat neque tincidunt. Nunc nibh sapien, lacinia nec dolor quis, aliquet commodo ligula. </p>
-				</div>
-				<div class="news_button">
-					read more
-				</div>
-			</div>
 			<!--dos-->
 			<div class="note">
 				<div class="pic">
@@ -94,7 +113,8 @@
 					read more
 				</div>
 			</div>
-			<!--dos-->
+
+			<!--tres-->
 			<div class="note2">
 				<div class="pic">
 					<img src="img/twod01.jpg">
@@ -110,9 +130,10 @@
 				</div>
 			</div>
 
-
 		</article>
 	</section>
+
+
 	<!--music-->
 	<section id="music">
 		<h1>music</h1>
@@ -121,31 +142,187 @@
 			<!--la idea es usar una API de spotify para cada disco, y unas flechas a cada lado para scrollear entre discos-->
 		</article>
 	</section>
+
+
 	<!--video-->
 	<section id="video">
 		<h1>videos</h1>
 		<article class="video_song">
-			<!--videos tomados de youtube-->
-			<!--flechas a cada lado para scrollear entre videos-->
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false"> 
+			  	<ol class="carousel-indicators">
+			    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			 	</ol>
+			  	<div class="carousel-inner">
+			    	<div class="carousel-item active">
+			    		<div class="videoWrapper">
+			      		<iframe width="560" height="315" src="https://www.youtube.com/embed/vkLOg252KRE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			      		</div>
+			    	</div>
+			    	<div class="carousel-item">
+			    		<div class="videoWrapper">
+			      			<iframe width="560" height="315" src="https://www.youtube.com/embed/J9LgHNf2Qy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			      		</div>
+			    	</div>
+			    	<div class="carousel-item">
+			    		<div class="videoWrapper">
+			      			<iframe width="560" height="315" src="https://www.youtube.com/embed/1LmX5c7HoUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			      		</div>
+			    	</div>
+			  	</div>
+			 	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    	<span class="sr-only">Previous</span>
+			  	</a>
+			  	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			   		<span class="sr-only">Next</span>
+			  	</a>
+			</div>
 		</article>
 	</section>
+
+
 	<!--store-->
 	<section id="store">
 		<h1>store</h1>
-		<!--grilla de productos, 4 columnas-->
-		<article id="product">
-			<div class="product_pic">
-				<img src="">
-			</div>
-			<div class="product_name">
-				<h3></h3>
-			</div>
-			<div class="product_price">
-				<p></p>
-			</div>
-			<div class="store_button">
-			</div>
-		</article>
-	</section>
+		<article class="store_grid">
+
+			<div class="row">
+				<!--uno-->
+			    <div class="col-6 col-md-3">
+			    	<div class="product">
+						<div class="product_pic">
+							<img src="img/store/shirt01.png">
+						</div>
+						<div class="product_name">
+							<h3>Noticia</h3>
+						</div>
+						<div class="store_button">
+							add to cart
+						</div>
+					</div>
+			    </div>
+
+			    <!--dos-->
+			    <div class="col-6 col-md-3">
+			    	<div class="product">
+						<div class="product_pic">
+							<img src="img/store/shirt02.png">
+						</div>
+						<div class="product_name">
+							<h3>Noticia</h3>
+						</div>
+						<div class="store_button">
+							add to cart
+						</div>
+					</div>
+			    </div>
+			    
+			    <!--tres-->
+			    <div class="col-6 col-md-3">
+			    	<div class="product">
+						<div class="product_pic">
+							<img src="img/store/shirt03.png">
+						</div>
+						<div class="product_name">
+							<h3>Noticia</h3>
+						</div>
+						<div class="store_button">
+							add to cart
+						</div>
+					</div>
+			    </div>
+
+			    <!--cuatro-->
+			    <div class="col-6 col-md-3">
+			    	<div class="product">
+						<div class="product_pic">
+							<img src="img/store/shirt04.png">
+						</div>
+						<div class="product_name">
+							<h3>Noticia</h3>
+						</div>
+						<div class="store_button">
+							add to cart
+						</div>
+					</div>
+			    </div>
+		  	</div>
+
+		  </article>
+
+		  <article class="store_grid">
+
+		  	<div class="row">
+				<!--uno-->
+			    <div class="col-6 col-md-3">
+			    	<div class="product">
+						<div class="product_pic">
+							<img src="img/store/vinyl01.png">
+						</div>
+						<div class="product_name">
+							<h3>Noticia</h3>
+						</div>
+						<div class="store_button">
+							add to cart
+						</div>
+					</div>
+			    </div>
+
+			    <!--dos-->
+			    <div class="col-6 col-md-3">
+			    	<div class="product">
+						<div class="product_pic">
+							<img src="img/store/vinyl02.png">
+						</div>
+						<div class="product_name">
+							<h3>Noticia</h3>
+						</div>
+						<div class="store_button">
+							add to cart
+						</div>
+					</div>
+			    </div>
+			    
+			    <!--tres-->
+			    <div class="col-6 col-md-3">
+			    	<div class="product">
+						<div class="product_pic">
+							<img src="img/store/vinyl03.png">
+						</div>
+						<div class="product_name">
+							<h3>Noticia</h3>
+						</div>
+						<div class="store_button">
+							add to cart
+						</div>
+					</div>
+			    </div>
+
+			    <!--cuatro-->
+			    <div class="col-6 col-md-3">
+			    	<div class="product">
+						<div class="product_pic">
+							<img src="img/store/vinyl04.png">
+						</div>
+						<div class="product_name">
+							<h3>Noticia</h3>
+						</div>
+						<div class="store_button">
+							add to cart
+						</div>
+					</div>
+			    </div>
+		  	</div>
+
+		  </article>
+  	</section>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>

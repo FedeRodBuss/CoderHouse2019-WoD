@@ -2,10 +2,11 @@ body{
 	background-color:#dedede;
 	margin:0 auto;
 	width:100%;
+	height:100%;
 }
 
 p{
-
+font-family:'Courier New';
 }
 
 h1{
@@ -197,14 +198,30 @@ section#store{
 	background:url('img/twod07.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
-	width:100%;
-	height:800px;
+	width:80	0%;
+	height:100%;
 	color:#ffffff;
 }
 
-article#product{
-	background:;
-	color:;
+article.store_grid{
+	display:flex;
+	flex-wrap:nowrap;
+	margin:20px auto;
+	width:80%;
+}
+
+div#product{
+	display:inline;
+	background-color:#ffffff;
+	flex:0 0 calc(25% - 20px);
+	margin:0 20px 0 0;
+}
+
+div#product2{
+	display:inline;
+	background-color:#ffffff;
+	flex:0 0 calc(25% - 20px);
+	margin:0;
 }
 
 div.product_name{
@@ -212,19 +229,14 @@ div.product_name{
 	color:;
 }
 
-div.product_pic{
-	background:;
+div.product_pic img{
+	background-color: rgba(255,255,255,0.6);
 	color:;
-}
-
-div.product_price{
-	background:;
-	color:;
+	width: 100%;
 }
 
 div.store_button{
-	background:;
-	color:;
+	@includ botones(white);
 }
 
 /*seccion tour*/
@@ -239,7 +251,9 @@ section#tour{
 }
 
 article#calendar{
-	
+	background-color: rgba(255,255,255,0.6);
+	margin:20px auto;
+	width:80%;
 }
 
 div#tour_dates{
@@ -273,8 +287,22 @@ section#video{
 }
 
 article#video_song{
-	background:;
-	color:;
+	margin:20px auto;
+	width:60%;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 90%;
 }
 
 /* Mobile */
